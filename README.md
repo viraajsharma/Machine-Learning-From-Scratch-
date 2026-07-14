@@ -1,2 +1,23 @@
-# Machine-Learning-From-Scratch-
-A comprehensive collection of machine learning algorithms implemented from scratch using Python and NumPy, with mathematical explanations, visualizations, and practical examples.
+# Machine Learning From Scratch
+
+A complete implementation of Machine Learning algorithms
+using only NumPy and Python.
+
+Algorithms include
+
+✔ Linear Regression
+✔ Logistic Regression
+✔ KNN
+✔ Decision Trees
+✔ Random Forest
+✔ PCA
+✔ SVM
+✔ Neural Networks
+
+Each implementation contains
+
+• Mathematical derivation
+• Theory
+• Python implementation
+• Visualizations
+• Experiments
