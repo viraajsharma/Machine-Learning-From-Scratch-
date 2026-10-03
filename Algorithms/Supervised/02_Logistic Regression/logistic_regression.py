@@ -21,12 +21,13 @@ def sigmoid(z):
 def cost(x_train,y_train,weights,bias):
     m = x_train.shape[0]
     cost = 0
+    epsilon = 1e-15
     for i in range(m):
-        epsilon = 1e-15
         z = np.dot(weights,x_train[i])+bias
         f_wb = sigmoid(z)
 
         # Prevent log(0)
+        # Clip probabilities to avoid log(0), which would produce -inf
         f_wb = np.clip(f_wb, epsilon, 1 - epsilon)
 
         cost += -y_train[i]*np.log(f_wb) - (1-y_train[i])*np.log(1-f_wb)
